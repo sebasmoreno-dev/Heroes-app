@@ -34,7 +34,7 @@ export const HeroCard = ({
                 <small className="text-muted">{first_appearance}</small>
               </p>
 
-              <Link to={`/heroes/${id}`} className="btn btn-primary">
+              <Link to={`/hero/${id}`} className="btn btn-primary">
                 More Info
               </Link>
 
