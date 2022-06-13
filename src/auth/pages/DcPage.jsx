@@ -1,7 +1,7 @@
 import React from "react";
-import HeroList from "./../hero/HeroList";
+import HeroList from "./../components/hero/HeroList";
 
-const DcScreen = () => {
+const DcPage = () => {
   return (
     <div>
       <h1>Dc Screen</h1>
@@ -12,4 +12,4 @@ const DcScreen = () => {
   );
 };
 
-export default DcScreen;
+export default DcPage;

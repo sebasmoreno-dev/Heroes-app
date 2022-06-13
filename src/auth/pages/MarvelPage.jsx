@@ -1,6 +1,6 @@
-import HeroList from './../hero/HeroList';
+import HeroList from './../components/hero/HeroList';
 
-const MarvelScreen = () => {
+const MarvelPage = () => {
   return (
     <div>
       <h1>Marvel Screen</h1>
@@ -10,4 +10,4 @@ const MarvelScreen = () => {
   );
 };
 
-export default MarvelScreen;
+export default MarvelPage;

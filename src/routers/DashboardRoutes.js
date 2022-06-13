@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import DcScreen from "../components/dc/DcScreen";
-import MarvelScreen from "../components/marvel/MarvelScreen";
-import SearchScreen from "../components/search/SearchScreen";
-import { Navbar } from "../components/ui/Navbar";
-import { HeroScreen } from "./../components/hero/HeroScreen";
+import DcPage from "./../auth/pages/DcPage.jsx";
+import MarvelPage from "../auth/pages/MarvelPage";
+import SearchPage from "../auth/pages/SearchPage";
+import { Navbar } from "../auth/components/ui/Navbar";
+import { HeroScreen } from "./../auth/components/hero/HeroScreen";
 
 const DashboardRoutes = () => {
   return (
@@ -12,12 +12,12 @@ const DashboardRoutes = () => {
 
       <div className="container mt-1">
         <Routes>
-          <Route path="marvel" element={<MarvelScreen />} />
-          <Route path="dc" element={<DcScreen />} />
-          <Route path="search" element={<SearchScreen />} />
+          <Route path="marvel" element={<MarvelPage />} />
+          <Route path="dc" element={<DcPage />} />
+          <Route path="search" element={<SearchPage />} />
           <Route path="hero/:heroeId" element={<HeroScreen />} />
 
-          <Route path="/" element={<MarvelScreen />} />
+          <Route path="/" element={<MarvelPage />} />
         </Routes>
 
       </div>

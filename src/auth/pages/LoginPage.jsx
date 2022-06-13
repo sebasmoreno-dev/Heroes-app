@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { AuthContext } from '../context';
 
 
 
-const LoginScreen = () => {
+const LoginPage = () => {
 
+  const { login } = useContext( AuthContext );
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    navigate('/marvel', {
+  const onLogin = () => {
+
+
+    login('Sebastian');
+
+    navigate('/', {
       replace: true
     });
   }
+
 
   return (
     <div className="container mt-5">
@@ -20,7 +27,7 @@ const LoginScreen = () => {
 
       <button
         className="btn btn-primary"
-        onClick={handleLogin}
+        onClick={onLogin}
         >
           Login
       </button>
@@ -28,4 +35,4 @@ const LoginScreen = () => {
   )
 }
 
-export default LoginScreen
+export default LoginPage
