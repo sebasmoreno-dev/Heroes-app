@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import DcPage from "./../auth/pages/DcPage.jsx";
+import DcPage from "../auth/pages/DcPage.jsx";
 import MarvelPage from "../auth/pages/MarvelPage";
 import SearchPage from "../auth/pages/SearchPage";
 import { Navbar } from "../auth/components/ui/Navbar";
-import { HeroScreen } from "./../auth/components/hero/HeroScreen";
+import { HeroScreen } from "../auth/components/hero/HeroScreen";
 
 const DashboardRoutes = () => {
   return (
