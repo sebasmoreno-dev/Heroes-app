@@ -3,7 +3,7 @@ import DcPage from "../auth/pages/DcPage.jsx";
 import MarvelPage from "../auth/pages/MarvelPage";
 import SearchPage from "../auth/pages/SearchPage";
 import { Navbar } from "../auth/components/ui/Navbar";
-import { HeroScreen } from "../auth/components/hero/HeroScreen";
+import { HeroPage } from "./../auth/pages/HeroPage.jsx";
 
 const DashboardRoutes = () => {
   return (
@@ -15,7 +15,7 @@ const DashboardRoutes = () => {
           <Route path="marvel" element={<MarvelPage />} />
           <Route path="dc" element={<DcPage />} />
           <Route path="search" element={<SearchPage />} />
-          <Route path="hero/:heroeId" element={<HeroScreen />} />
+          <Route path="hero/:heroeId" element={<HeroPage />} />
 
           <Route path="/" element={<MarvelPage />} />
         </Routes>
