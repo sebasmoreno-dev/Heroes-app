@@ -10,6 +10,8 @@ const SearchScreen = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // const showSearch = (q.length === 0);
+
   const { q =  '' } = queryString.parse(location.search);
 
 
